@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Lolly</string>
+    <string name="poster_image_content_description">Poster image</string>
+    <string name="menu_back_arrow_content_description">Back arrow</string>
+    <string name="back_label">Back</string>
+    <string name="avengers_title">Avengers: End Game</string>
+    <string name="genres_label">Action, Adventure, Fantasy</string>
+    <string name="reviews_label">125 REVIEWS</string>
+    <string name="storyline_label">Storyline</string>
+    <string name="storyline_sample">After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos\' actions and restore balance to the universe.</string>
+    <string name="cast_label">Cast</string>
+    <string name="chris_hemsworth">Chris Hemsworth</string>
+    <string name="mark_ruffalo">Mark Ruffalo</string>
+    <string name="chris_evans">Chris Evans</string>
+    <string name="robert_downey_jr">Robert Downey Jr.</string>
 </resources>

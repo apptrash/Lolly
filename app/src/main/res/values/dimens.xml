@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="extra_small_margin">4dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="large_margin">32dp</dimen>
+    <dimen name="top_menu_guideline_top_margin">44dp</dimen>
+    <dimen name="bottom_menu_guideline_top_margin">84dp</dimen>
+    <dimen name="menu_back_arrow_start_margin">2dp</dimen>
+    <dimen name="movie_offset">222dp</dimen>
+</resources>
