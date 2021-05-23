@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Lolly</string>
+
+    <string name="avengers_poster_description">Avengers poster</string>
+    <string name="back_icon_description">Back icon</string>
+    <string name="back_hint">Back</string>
 </resources>
