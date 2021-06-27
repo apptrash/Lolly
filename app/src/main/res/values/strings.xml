@@ -4,4 +4,16 @@
     <string name="avengers_poster_description">Avengers poster</string>
     <string name="back_icon_description">Back icon</string>
     <string name="back_hint">Back</string>
+    <string name="age_stub">13+</string>
+    <string name="movie_title_stub">Avengers:\nEnd Game</string>
+    <string name="genres_stub">Action, Adventure, Fantasy</string>
+    <string name="reviews_number_stub">125 reviews</string>
+    <string name="storyline">Storyline</string>
+
+    <string name="storyline_text_stub">After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos\' actions and restore balance to the universe.</string>
+    <string name="cast_label">Cast</string>
+    <string name="robert_downey_jr_label">Robert Downey Jr.</string>
+    <string name="chris_evans_label">Chris Evans</string>
+    <string name="mark_ruffalo_label">Mark Ruffalo</string>
+    <string name="chris_hemsworth_label">Chris Hemsworth</string>
 </resources>

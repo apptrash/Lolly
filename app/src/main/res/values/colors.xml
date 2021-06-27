@@ -10,4 +10,6 @@
 
     <color name="movie_details_background">#FF191926</color>
     <color name="gray">#FF6D6D80</color>
+    <color name="storm_gray">#FF6D6D80</color>
+    <color name="radical_red">#FFFF3466</color>
 </resources>
