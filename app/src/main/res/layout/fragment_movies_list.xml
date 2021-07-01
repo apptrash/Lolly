@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/steel_gray">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".FragmentMoviesList">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/start_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/large_spacing" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/end_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/large_spacing" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/menu_top_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/menu_top_offset" />
+
+        <ImageView
+            android:id="@+id/target_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:contentDescription="@string/navigation_target_icon"
+            android:src="@drawable/ic_target"
+            app:layout_constraintBottom_toBottomOf="@id/menu_bottom_guideline"
+            app:layout_constraintStart_toStartOf="@id/start_guideline"
+            app:layout_constraintTop_toTopOf="@id/menu_top_guideline" />
+
+        <TextView
+            android:id="@+id/movies_list_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_spacing"
+            android:text="@string/movies_list"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/menu_bottom_guideline"
+            app:layout_constraintStart_toEndOf="@+id/target_icon"
+            app:layout_constraintTop_toTopOf="@+id/menu_top_guideline" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/menu_bottom_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/menu_bottom_offset" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/movie_stub_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_spacing"
+            app:cardBackgroundColor="@color/card_background_color"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintStart_toStartOf="@id/start_guideline"
+            app:layout_constraintTop_toTopOf="@id/menu_bottom_guideline"
+            app:strokeColor="@color/mid_gray"
+            app:strokeWidth="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/movie_stub_root"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/poster_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/poster_image"
+                    android:src="@drawable/avengers_movie_poster"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/dimmer"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/movie_dimmer_mask"
+                    app:layout_constraintBottom_toBottomOf="@id/poster_image_view"
+                    app:layout_constraintEnd_toEndOf="@id/poster_image_view"
+                    app:layout_constraintStart_toStartOf="@id/poster_image_view"
+                    app:layout_constraintTop_toTopOf="@id/poster_image_view" />
+
+                <TextView
+                    android:id="@+id/age_hint"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="@dimen/normal_spacing"
+                    android:layout_marginTop="@dimen/normal_spacing"
+                    android:background="@drawable/steel_gray_with_rounded_corners"
+                    android:gravity="center"
+                    android:text="@string/age_stub"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/like_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/normal_spacing"
+                    android:contentDescription="@string/like_image"
+                    android:src="@drawable/ic_like"
+                    app:layout_constraintBottom_toBottomOf="@id/age_hint"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/age_hint" />
+
+                <TextView
+                    android:id="@+id/genres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/normal_spacing"
+                    android:layout_marginTop="@dimen/small_spacing"
+                    android:layout_marginBottom="@dimen/extra_small_spacing"
+                    android:text="@string/genres_stub"
+                    android:textColor="@color/radical_red"
+                    android:textSize="@dimen/description_text_size"
+                    app:layout_constraintBottom_toTopOf="@id/rating_bar"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <RatingBar
+                    android:id="@+id/rating_bar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/normal_spacing"
+                    android:layout_marginTop="@dimen/normal_spacing"
+                    android:layout_marginBottom="@dimen/normal_spacing"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressBackgroundTint="@color/storm_gray"
+                    android:progressTint="@color/radical_red"
+                    android:rating="4"
+                    android:secondaryProgressTint="@android:color/transparent"
+                    app:layout_constraintBottom_toBottomOf="@id/poster_image_view"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/reviews_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/small_spacing"
+                    android:text="@string/reviews_number_stub"
+                    android:textAllCaps="true"
+                    android:textColor="@color/storm_gray"
+                    android:textSize="@dimen/description_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/rating_bar"
+                    app:layout_constraintStart_toEndOf="@id/rating_bar"
+                    app:layout_constraintTop_toTopOf="@id/rating_bar" />
+
+                <TextView
+                    android:id="@+id/movie_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/normal_spacing"
+                    android:layout_marginTop="@dimen/normal_spacing"
+                    android:text="@string/movie_title_stub_single_line"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/poster_image_view" />
+
+                <TextView
+                    android:id="@+id/movie_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/normal_spacing"
+                    android:text="@string/movie_duration_stub"
+                    android:textAllCaps="true"
+                    android:textColor="@color/scarpa_flow"
+                    android:textSize="@dimen/description_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/movie_title"
+                    app:layout_constraintTop_toBottomOf="@id/movie_title" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

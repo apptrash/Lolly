@@ -8,8 +8,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="movie_details_background">#FF191926</color>
+    <color name="steel_gray">#FF191926</color>
+    <color name="card_background_color">#FF222232</color>
     <color name="gray">#FF6D6D80</color>
     <color name="storm_gray">#FF6D6D80</color>
+    <color name="scarpa_flow">#565665</color>
+    <color name="mid_gray">#80636375</color>
     <color name="radical_red">#FFFF3466</color>
 </resources>

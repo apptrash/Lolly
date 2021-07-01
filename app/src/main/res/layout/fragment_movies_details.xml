@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:orientation="vertical"
-    tools:context=".MovieDetailsActivity">
+    tools:context=".FragmentMoviesDetails">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/root"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/movie_details_background">
+        android:background="@color/steel_gray">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/start_guideline"
@@ -43,14 +43,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="44dp" />
+            app:layout_constraintGuide_begin="@dimen/menu_top_offset" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/menu_bottom_guideline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="84dp" />
+            app:layout_constraintGuide_begin="@dimen/menu_bottom_offset" />
 
         <ImageView
             android:id="@+id/menu_back_icon"

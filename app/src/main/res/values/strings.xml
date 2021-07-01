@@ -6,6 +6,7 @@
     <string name="back_hint">Back</string>
     <string name="age_stub">13+</string>
     <string name="movie_title_stub">Avengers:\nEnd Game</string>
+    <string name="movie_title_stub_single_line">Avengers: End Game</string>
     <string name="genres_stub">Action, Adventure, Fantasy</string>
     <string name="reviews_number_stub">125 reviews</string>
     <string name="storyline">Storyline</string>
@@ -16,4 +17,9 @@
     <string name="chris_evans_label">Chris Evans</string>
     <string name="mark_ruffalo_label">Mark Ruffalo</string>
     <string name="chris_hemsworth_label">Chris Hemsworth</string>
+    <string name="movies_list">Movies list</string>
+    <string name="navigation_target_icon">Navigation target icon</string>
+    <string name="movie_duration_stub">137 min</string>
+    <string name="like_image">Like image</string>
+    <string name="poster_image">Poster image</string>
 </resources>
